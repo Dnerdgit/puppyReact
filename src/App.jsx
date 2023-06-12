@@ -4,20 +4,28 @@ import './App.css'
 
 function App() {
   const [puppies, setPuppies] = useState(puppyList);
-  console.log("puppyList: ", puppyList);
+  const [featPupId, setFeatPupId] = useState(null);
+
+  console.log(puppies);
+  //onClick={()=>{console.log("puppy id: ", puppy.id)}}
+  
+  const featuredPup = puppies.find((pup) => pup.id === featPupId)
+  console.log(featuredPup);
 
   return (
-    <>
+    
       <div className="App">
+       
         {
           puppies.map((puppy) => {
-            return <p key={puppy.id}>{puppy.name}</p>
+            return <p onClick={()=> { setFeatPupId(puppy.id) }} key={puppy.id}>{puppy.name}</p>
           })
         }
+        <p>{featPupId}</p>
       </div>
  
 
-    </>
+    
   )
 }
 
