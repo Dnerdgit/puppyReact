@@ -21,7 +21,23 @@ function App() {
             return <p onClick={()=> { setFeatPupId(puppy.id) }} key={puppy.id}>{puppy.name}</p>
           })
         }
+
         <p>{featPupId}</p>
+
+        {featPupId && (
+        <div class="pupFeature">
+
+          <h2>{featuredPup.name}</h2>
+          <div>
+            <img src={featuredPup.imageUrl}/>
+          </div>
+          <br></br>
+          <ul>
+            <li>Age: {featuredPup.age}</li>
+            <li>Email: {featuredPup.email}</li>
+          </ul>
+        </div>
+      )}
       </div>
  
 

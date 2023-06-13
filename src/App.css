@@ -18,6 +18,45 @@
   filter: drop-shadow(0 0 2em #c5e87aaa);
 }
 
+
+p {
+  width:100%;
+  padding: 5 5 2 5;
+  border: 2px dotted rgb(47, 216, 31);
+  background: -webkit-linear-gradient(rgb(205, 9, 9), white);
+  -webkit-text-fill-color: rgb(6, 35, 95);
+  border-radius: 4px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+}
+
+img {
+  padding: 8px;
+  margin: 3 8 8 8;;
+  height: 200px;
+  width: 200px;
+}
+
+.pupFeature {
+  display:flexbox;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
